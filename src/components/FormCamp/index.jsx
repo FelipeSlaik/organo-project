@@ -19,13 +19,18 @@ const FormCamp = (props) => {
             image,
             time,
         })
+        setName('')
+        setCarg('')
+        setImage('')
+        setTime('')
     }
 
     return (
         <section className='form-container'>
             <form onSubmit={save}>
                 <h2>Preencha os dados para criar o card do colaborador</h2>
-                <CampText filled={true}
+                <CampText 
+                    filled={true}
                     label="Nome"
                     placeholder="Digite seu nome"
                     value={name}

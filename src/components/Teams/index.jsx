@@ -6,11 +6,13 @@ const Teams = (props) => {
     const borderColor = { borderColor: props.primaryColor }
     return (
 
-        <section className='time-container' style={timeBg}>
+        (props.collaborators.length > 0) ? <section className='time-container' style={timeBg}>
             <h3 style={borderColor}>{props.nome}</h3>
-            <Collaborator />
-            <Collaborator />
+            <div className='collaborators'>
+                {props.collaborators.map(collaborator => <Collaborator key={collaborator} name={collaborator.name} carg={collaborator.carg} image={collaborator.image} />)}
+            </div>
         </section>
+        : ''
     )
 }
 

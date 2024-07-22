@@ -16,7 +16,7 @@ const CampText = (props) => {
             <label>
                 {props.label}
             </label>
-            <input value={props.inputValue}
+            <input value={props.value}
             onChange={typed}  required={props.filled} 
             placeholder={placeholderModified}  
             />

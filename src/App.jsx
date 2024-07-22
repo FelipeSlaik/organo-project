@@ -56,7 +56,13 @@ function App() {
     <div className='App'>
       <Banner />
       <FormCamp timeName={times.map(time => time.nome)} registeredCollaborator={collaborator => newCollaborator(collaborator)} />
-      {times.map(time => <Teams key={time.nome} nome={time.nome} primaryColor={time.primaryColor} secondaryColor={time.secondaryColor} />)}
+      {times.map(time => <Teams
+        key={time.nome}
+        nome={time.nome}
+        primaryColor={time.primaryColor}
+        secondaryColor={time.secondaryColor}
+        collaborators={collaborators.filter(collaborator => collaborator.time === time.nome)}
+      />)}
 
 
     </div>
