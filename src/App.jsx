@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Banner from './components/Banner/Banner.jsx'
 import FormCamp from './components/FormCamp'
 import Teams from './components/Teams/index.jsx'
+import Footer from './components/Footer/index.jsx'
 
 function App() {
 
@@ -63,7 +64,7 @@ function App() {
         secondaryColor={time.secondaryColor}
         collaborators={collaborators.filter(collaborator => collaborator.time === time.nome)}
       />)}
-
+      <Footer />
 
     </div>
 
