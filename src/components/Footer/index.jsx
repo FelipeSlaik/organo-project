@@ -10,9 +10,9 @@ const Footer = () => {
         <footer className='footer-container'>
 
             <div className='social-icons'>
-                <a href='#' onClick={noReload} ><img src="/public/image/fb.png" alt="Logo facebook" /></a>
-                <a href='#' onClick={noReload} ><img src="/public/image/tw.png" alt="Logo twiter" /></a>
-                <a href='#' onClick={noReload} ><img src="/public/image/ig.png" alt="Logo instagram" /></a>
+                <a href='#' onClick={noReload} ><img src="/image/fb.png" alt="Logo facebook" /></a>
+                <a href='#' onClick={noReload} ><img src="/image/tw.png" alt="Logo twiter" /></a>
+                <a href='#' onClick={noReload} ><img src="/image/ig.png" alt="Logo instagram" /></a>
             </div>
 
             <div className='logo'>
